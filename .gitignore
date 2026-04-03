@@ -1,0 +1,71 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files
+.env
+.env.local
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# screenshots (generated, large files)
+/screenshots/
+
+# downloaded assets (large, fetched via script)
+/public/assets/icons/
+/public/assets/images/
+/public/assets/lottie/
+/public/assets/docs/
+/public/assets/other/
+
+# playwright mcp logs
+.playwright-mcp/
+
+# strapi backend
+/backend/node_modules
+/backend/.tmp
+/backend/.cache
+/backend/dist
+/backend/build
+/backend/public/uploads/*
+!/backend/public/uploads/.gitkeep
+
+# migration data (extracted from Webflow, large JSON files)
+scripts/migrate/data/
+
+# conductor
+.context/
